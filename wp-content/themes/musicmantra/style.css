@@ -1,0 +1,107 @@
+/*
+Theme Name: MusicMantra
+Theme URI: https://cozythemes.com/musicmantra-free-wordpress-theme-for-music-artists/
+Author: CozyThemes
+Author URI: https://cozythemes.com/
+Description: Introducing MusicMantra, a child theme of FotaWP and a modern WordPress theme for music artists, singers, music studios, music bands and individuals trying to showcase their feeds and skills through a beautiful website. Increase your engagement rate and present your content to your followers, taking your social media presence to unmatched heights. With the theme being compatible with full-site editing (FSE), MusicMantra enables you to build a website that is not only captivating to you but also to your audience. MusicMantra is also integrated with your favorite page builder, Elementor, and can easily be paired up with modern plugins, giving you more power for customization. Redefine your online  presents with MuiscMantra, connect with your audience on a deeper level, and foster a community of loyal followers. Learn more at: https://cozythemes.com/musicmantra-free-wordpress-theme-for-music-artists/.
+Template: fotawp
+Version: 1.0.0
+Requires at least: 5.9
+Tested up to: 6.4
+Requires PHP: 7.0
+License: GPLv3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: musicmantra
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, e-commerce, full-site-editing, block-patterns, full-width-template, rtl-language-support, threaded-comments, translation-ready, block-styles, wide-blocks
+*/
+.wp-block-buttons.fotaagency-buttons-with-icon .wp-block-button__link img {
+  margin-bottom: -8px;
+}
+nav.wp-block-navigation ul li a:hover,
+.wp-block-button.is-style-outline a:hover {
+  color: var(--wp--preset--color--primary) !important;
+}
+.entry-content.wp-block-post-content a,
+.wp-block-comment-content a,
+p a {
+  text-decoration: underline;
+}
+@keyframes musicMantraScale {
+  60% {
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -ms-transform: scale(1.25);
+    -o-transform: scale(1.25);
+    transform: scale(1.25);
+  }
+}
+.wp-block-cover.musicmantra-banner-cover img {
+  animation: musicMantraScale 40s linear infinite;
+  -webkit-animation: musicMantraScale 40s linear infinite;
+  -moz-animation: musicMantraScale 40s linear infinite;
+}
+.wp-block-contact-form-7-contact-form-selector.musicmantra-newsletter .wpcf7-form-control-wrap {
+  width: 65% !important;
+  float: left;
+}
+.wp-block-contact-form-7-contact-form-selector.musicmantra-newsletter input {
+  border-radius: 0;
+  border: 0;
+  height: 50px;
+}
+.wp-block-contact-form-7-contact-form-selector.musicmantra-newsletter .wpcf7-form-control.wpcf7-submit {
+  width: 32% !important;
+  border-radius: 0;
+  height: 48px;
+  margin: 10px 0 0 3%;
+  color: var(--wp--preset--color--primary) !important;
+  border: 1px solid var(--wp--preset--color--primary) !important;
+  background: transparent;
+}
+.wp-block-contact-form-7-contact-form-selector.musicmantra-newsletter .wpcf7-form-control.wpcf7-submit:hover {
+  background-color: var(--wp--preset--color--primary) !important;
+  color: var(--wp--preset--color--heading-color) !important;
+}
+.wp-block-cover.musicmantra-post-cover:hover img {
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+}
+.wp-block-group.musicmantra-team-info {
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+  width: 100%;
+  transition: all ease 0.23s;
+  -webkit-transition: all ease 0.23s;
+  -moz-transition: all ease 0.23s;
+  opacity: 0;
+}
+.wp-block-cover.musicmantra-team-member:hover .wp-block-group.musicmantra-team-info {
+  opacity: 1;
+  bottom: 30px;
+}
+.wp-block-cover.musicmantra-team-member:hover .wp-block-cover__image-background {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  filter: grayscale(1);
+}
+.wp-block-button.musicmantra-btns a {
+  position: relative;
+}
+.wp-block-button.musicmantra-btns a:after {
+  content: "";
+  width: 15px;
+  height: 2px;
+  background-color: var(--wp--preset--color--primary) !important;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: all ease 0.23s;
+  -webkit-transition: all ease 0.23s;
+  -moz-transition: all ease 0.23s;
+}
+.wp-block-button.musicmantra-btns a:hover:after {
+  width: 100%;
+}
